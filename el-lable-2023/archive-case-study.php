@@ -24,5 +24,4 @@ $cat_obj = $wp_query->get_queried_object();
 	<?php include( TEMPLATEPATH . '/inc/nav-cases.php' ); ?>
 </div><!-- /.cases -->
 
-
 <?php get_footer(); ?>
