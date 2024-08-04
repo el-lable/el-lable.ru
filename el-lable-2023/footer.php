@@ -1,7 +1,7 @@
 			<?php if ( is_active_sidebar( 'after-content' ) ) { ?><section class="after_content"><?php dynamic_sidebar( 'after-content' ); ?></section><?php } ?>
 			
 			<?php
-			$field = get_field( 'delimiter', 'options' );
+			$field = get_field( 'delimiter', 'options' ) ;
 			if( !empty( $field ) && ( !empty( $field['title'] ) || !empty( $field['caption'] ) ) ) {
 			?>
 				<div class="delimiter">
