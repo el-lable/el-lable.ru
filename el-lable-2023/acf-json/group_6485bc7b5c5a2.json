@@ -1,0 +1,190 @@
+{
+    "key": "group_6485bc7b5c5a2",
+    "title": "[Block]ChatGPT",
+    "fields": [
+        {
+            "key": "field_6485bc8811dfc",
+            "label": "ChatGPT",
+            "name": "chat-gpt",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "sub_fields": [
+                {
+                    "key": "field_6485bd630d7db",
+                    "label": "Temperature",
+                    "name": "temperature",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "0.9",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 0,
+                    "max": 1,
+                    "step": "0.1"
+                },
+                {
+                    "key": "field_6485bda8ca067",
+                    "label": "Max Tokens",
+                    "name": "max_tokens",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 100,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": "",
+                    "step": 1
+                },
+                {
+                    "key": "field_6485bde34aace",
+                    "label": "Top P",
+                    "name": "top_p",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_6485be104aacf",
+                    "label": "Frequency Penalty",
+                    "name": "frequency_penalty",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "0.0",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "0.0",
+                    "max": "1.0",
+                    "step": "0.1"
+                },
+                {
+                    "key": "field_6485be464aad0",
+                    "label": "Presence Penalty",
+                    "name": "presence_penalty",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "0.0",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "0.0",
+                    "max": "1.0",
+                    "step": "0.1"
+                },
+                {
+                    "key": "field_6485be634548f",
+                    "label": "Model",
+                    "name": "model",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "text-davinci-003": "text-davinci-003"
+                    },
+                    "default_value": "text-davinci-003",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6485be85014d7",
+                    "label": "Api Key",
+                    "name": "api_key",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ],
+            "layout": "block"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/chat-gpt"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1686486676
+}

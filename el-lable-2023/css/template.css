@@ -1,0 +1,172 @@
+/**
+ * Template
+ */
+
+html,
+body{
+	height: 100%;
+}
+body{
+	background:var(--light);
+}
+
+/* main grid */
+#wrap_outer{
+	position:relative;
+	overflow:hidden;
+	display:flex;
+	width:1396px;
+	max-width:100%;
+	min-height:100%;
+	margin:0 auto;
+}
+#wrap{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	box-sizing:border-box;
+	width:1054px;
+	padding:0 15px;
+	max-width:100%;
+	min-height:100%;
+	margin:0 auto;
+}
+#content{
+	display:flex;
+	flex-wrap:wrap;
+}
+#footer{
+	margin-top:auto;
+}
+
+/* Content Elements */
+#content a{
+	color:var(--secondary);
+}
+#content figure img{
+	box-shadow:0 24px 50px rgba(0,0,0,.1);
+	backdrop-filter:blur(4px);
+	border-radius:24px;
+}
+#content > ul,
+#content > ul > li{
+	display:block;
+	list-style:none;
+	padding:0;
+}
+#content > ul > li{
+	position:relative;
+	padding:0 0 0 12px;
+}
+#content > ul > li:before{
+	content:"";
+	position:absolute;
+	left:0;
+	top:calc(1.33em / 2);
+	width:5px;
+	height:5px;
+	margin:-2.5px 0 0;
+	border-radius:50%;
+	background:var(--primary);
+}
+
+/* Content Blocks */
+#content .before_content + .title{
+	order:-1;
+}
+#content > *{
+	width:100%;
+}
+#content > div{
+	position:relative;
+}
+#content > div:before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:0 -186px;
+	background:var(--light);
+	transform:skewY(-3deg);
+	z-index:-1;
+}
+#content > div:nth-of-type(even):before{
+	background:var(--light-alternative);
+	z-index:0;
+}
+#content > div:nth-of-type(even) > *{
+	position:relative;
+}
+#content > .articles{
+	padding:50px 0;
+}
+#content > .articles ~ .buttons,
+#content > .articles .buttons{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#content #content-aside{
+	margin:60px 0 0;
+}
+#content #content-aside:last-of-type{
+	margin-bottom:80px;
+}
+#content > div.icon-list:nth-of-type(even):after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:0 -186px;
+	background:url('../images/plots-bg.png') 50% 50% no-repeat transparent;
+	z-index:0;
+	background-size:100% 100%;
+}
+#content > article{
+	padding:50px 0;
+}
+#content #credentials{
+	margin:1em 0;
+}
+
+/* Style Corrections */
+#content .title + .contact-form{
+	margin-top:-90px;
+}
+#content .title + .contact-form:before{
+	display:none;
+}
+#content .thumb-block + .cases{
+	margin-top:-80px;
+}
+#content .carts + .thumb-block:before{
+	top:-320px;
+}
+#content .thumb-block + .thumb-block:before{
+	top:-140px;
+	z-index:0;
+}
+#content .thumb-block + .testimonials{
+	margin-top:-140px;
+}
+#content .thumb-block + .testimonials:before{
+	z-index:0;
+}
+body.fancybox-active{
+	overflow:inherit !important;
+}
+.compensate-for-scrollbar{
+	margin-right:0 !important;
+}
+.title + .thumb-block:nth-of-type(2n+1) .thumb{
+	order:0;
+}
+
+/* Corrections */
+#footer .logo{
+	display:none;
+}
