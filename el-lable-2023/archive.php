@@ -12,7 +12,7 @@ $cat_obj = $wp_query->get_queried_object();
 
 <?php if ( have_posts() ) { ?>
 	<section class="articles" data-category_id="<?php echo $cat_obj->term_id; ?>">
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'inc/article' ); ?>
 		<?php endwhile; ?>
 	</section><!-- /.articles -->
