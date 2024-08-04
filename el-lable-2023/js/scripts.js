@@ -245,4 +245,6 @@ jQuery(function($){
 	$('.tml .placeholder').each(function(){
 		$(this).siblings('input, button').attr('placeholder', $(this).text());
 	});
+
+	/** Other information */
 });
